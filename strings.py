@@ -1,6 +1,3 @@
-from enum import nonmember
-
-
 class String:
     def __init__(self, frets, tune):
         self.frets = frets
@@ -8,25 +5,27 @@ class String:
         self.notes = ['A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#']
 
     def build_string(self):
-        strng = []
+        strings = []
         index = None
 
-        for i, note in enumerate(notes):
-            if tune in notes:
-                index = notes.index(tune)
+        for i, note in enumerate(self.notes):
+            if self.tune in self.notes:
+                index = self.notes.index(self.tune)
 
-        for i in range(int(frets)):
-            strng.append(notes[index])
+        for i in range(int(self.frets + 2)):
+            strings.append(self.notes[index])
             index += 1
-            if index == len(notes):
+            if index == len(self.notes):
                 index = 0
 
+        return strings
 
 
-notes = ['A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#']
 
-tune = input("Enter string tuning: ")
-frets = input("Enter number of frets: ")
+
+
+
+
 
 
 

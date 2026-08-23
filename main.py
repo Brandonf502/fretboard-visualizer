@@ -1,10 +1,9 @@
-import guitar
-import strings
-import scales
-import chords
+from guitar import *
 
 def main():
-    pass
+    guitar = Guitar()
+    guitar.play()
+    print(guitar.fretboard)
 
 if __name__ == "__main__":
     main()
