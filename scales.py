@@ -48,7 +48,7 @@ class Scales:
 
     def dorian(self, note):
         scale = []
-        for note in self.notes:
+        if note in self.notes:
             scale.append(note)
             note = self.whole_step(note)
             scale.append(note)
@@ -67,9 +67,10 @@ class Scales:
 
             self.dorian_mode = scale
         return scale
+
     def phrygian(self, note):
         scale = []
-        for note in self.notes:
+        if note in self.notes:
             scale.append(note)
             note = self.half_step(note)
             scale.append(note)
@@ -91,7 +92,7 @@ class Scales:
 
     def lydian(self, note):
         scale = []
-        for note in self.notes:
+        if note in self.notes:
             scale.append(note)
             note = self.whole_step(note)
             scale.append(note)
@@ -113,7 +114,7 @@ class Scales:
 
     def mixolydian(self, note):
         scale = []
-        for note in self.notes:
+        if note in self.notes:
             scale.append(note)
             note = self.whole_step(note)
             scale.append(note)
@@ -135,7 +136,7 @@ class Scales:
 
     def aeolian(self, note):
         scale = []
-        for note in self.notes:
+        if note in self.notes:
             scale.append(note)
             note = self.whole_step(note)
             scale.append(note)
@@ -157,7 +158,7 @@ class Scales:
 
     def locrian(self, note):
         scale = []
-        for note in self.notes:
+        if note in self.notes:
             scale.append(note)
             note = self.half_step(note)
             scale.append(note)
@@ -178,14 +179,7 @@ class Scales:
         return scale
 
 
-def main():
-    scales = Scales()
-    note = input('Enter a note: ')
-    scale = scales.major(note)
-    print(scale)
 
-
-main()
 
 
 

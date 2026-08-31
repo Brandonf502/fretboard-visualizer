@@ -12,7 +12,7 @@ class String:
             if self.tune in self.notes:
                 index = self.notes.index(self.tune)
 
-        for i in range(int(self.frets + 2)):
+        for i in range(int(self.frets + 1)):
             strings.append(self.notes[index])
             index += 1
             if index == len(self.notes):
