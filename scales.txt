@@ -1,0 +1,96 @@
+A major scale: A, B, C#, D, E, F#, G#, A
+A dorian scale: A, B, C, D, E, F#, G, A
+A phrygian scale: A, A#, C, D, E, F, G, A
+A lydian scale: A, B, C#, D#, E, F#, G#, A
+A micolydian scale: A, B, C#, D, E, F#, G, A
+A aeolian scale: A, B, C, D, E, F, G, A
+A locrian scale: A, A#, C, D, D#, F, G, A
+
+A# major scale: A#, C, D, D#, F, G, A, A#
+A# dorian scale: A#, C, C#, D#, F, G, G#, A#
+A# phrygian scale: A#, B, C#, D#, F, F#, G#, A#
+A# lydian scale: A#, C, D, E, F, G, A, A#
+A# micolydian scale: A#, C, D, D#, F, G, G#, A#
+A# aeolian scale: A#, C, C#, D#, F, F#, G#, A#
+A# locrian scale: A#, B, C#, D#, E, F#, G#, A#
+
+B major scale: B, C#, D#, E, F#, G#, A#, B
+B dorian scale: B, C#, D, E, F#, G#, A, B
+B phrygian scale: B, C, D, E, F#, G, A, B
+B lydian scale: B, C#, D#, F, F#, G#, A#, B
+B micolydian scale: B, C#, D#, E, F#, G#, A, B
+B aeolian scale: B, C#, D, E, F#, G, A, B
+B locrian scale: B, C, D, E, F, G, A, B
+
+C major scale: C, D, E, F, G, A, B, C
+C dorian scale: C, D, D#, F, G, A, A#, C
+C phrygian scale: C, C#, D#, F, G, G#, A#, C
+C lydian scale: C, D, E, F#, G, A, B, C
+C micolydian scale: C, D, E, F, G, A, A#, C
+C aeolian scale: C, D, D#, F, G, G#, A#, C
+C locrian scale: C, C#, D#, F, F#, G#, A#, C
+
+C# major scale: C#, D#, F, F#, G#, A#, C, C#
+C# dorian scale: C#, D#, E, F#, G#, A#, B, C#
+C# phrygian scale: C#, D, E, F#, G#, A, B, C#
+C# lydian scale: C#, D#, F, G, G#, A#, C, C#
+C# micolydian scale: C#, D#, F, F#, G#, A#, B, C#
+C# aeolian scale: C#, D#, E, F#, G#, A, B, C#
+C# locrian scale: C#, D, E, F#, G, A, B, C#
+
+D major scale: D, E, F#, G, A, B, C#, D
+D dorian scale: D, E, F, G, A, B, C, D
+D phrygian scale: D, D#, F, G, A, A#, C, D
+D lydian scale: D, E, F#, G#, A, B, C#, D
+D micolydian scale: D, E, F#, G, A, B, C, D
+D aeolian scale: D, E, F, G, A, A#, C, D
+D locrian scale: D, D#, F, G, G#, A#, C, D
+
+D# major scale: D#, F, G, G#, A#, C, D, D#
+D# dorian scale: D#, F, F#, G#, A#, C, C#, D#
+D# phrygian scale: D#, E, F#, G#, A#, B, C#, D#
+D# lydian scale: D#, F, G, A, A#, C, D, D#
+D# micolydian scale: D#, F, G, G#, A#, C, C#, D#
+D# aeolian scale: D#, F, F#, G#, A#, B, C#, D#
+D# locrian scale: D#, E, F#, G#, A, B, C#, D#
+
+E major scale: E, F#, G#, A, B, C#, D#, E
+E dorian scale: E, F#, G, A, B, C#, D, E
+E phrygian scale: E, F, G, A, B, C, D, E
+E lydian scale: E, F#, G#, A#, B, C#, D#, E
+E micolydian scale: E, F#, G#, A, B, C#, D, E
+E aeolian scale: E, F#, G, A, B, C, D, E
+E locrian scale: E, F, G, A, A#, C, D, E
+
+F major scale: F, G, A, A#, C, D, E, F
+F dorian scale: F, G, G#, A#, C, D, D#, F
+F phrygian scale: F, F#, G#, A#, C, C#, D#, F
+F lydian scale: F, G, A, B, C, D, E, F
+F micolydian scale: F, G, A, A#, C, D, D#, F
+F aeolian scale: F, G, G#, A#, C, C#, D#, F
+F locrian scale: F, F#, G#, A#, B, C#, D#, F
+
+F# major scale: F#, G#, A#, B, C#, D#, F, F#
+F# dorian scale: F#, G#, A, B, C#, D#, E, F#
+F# phrygian scale: F#, G, A, B, C#, D, E, F#
+F# lydian scale: F#, G#, A#, C, C#, D#, F, F#
+F# micolydian scale: F#, G#, A#, B, C#, D#, E, F#
+F# aeolian scale: F#, G#, A, B, C#, D, E, F#
+F# locrian scale: F#, G, A, B, C, D, E, F#
+
+G major scale: G, A, B, C, D, E, F#, G
+G dorian scale: G, A, A#, C, D, E, F, G
+G phrygian scale: G, G#, A#, C, D, D#, F, G
+G lydian scale: G, A, B, C#, D, E, F#, G
+G micolydian scale: G, A, B, C, D, E, F, G
+G aeolian scale: G, A, A#, C, D, D#, F, G
+G locrian scale: G, G#, A#, C, C#, D#, F, G
+
+G# major scale: G#, A#, C, C#, D#, F, G, G#
+G# dorian scale: G#, A#, B, C#, D#, F, F#, G#
+G# phrygian scale: G#, A, B, C#, D#, E, F#, G#
+G# lydian scale: G#, A#, C, D, D#, F, G, G#
+G# micolydian scale: G#, A#, C, C#, D#, F, F#, G#
+G# aeolian scale: G#, A#, B, C#, D#, E, F#, G#
+G# locrian scale: G#, A, B, C#, D, E, F#, G#
+

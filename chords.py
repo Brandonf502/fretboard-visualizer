@@ -18,6 +18,7 @@ class Chords:
                 chord = list(chord)
                 new_chord.append(chord[index])
         chord = new_chord
+        print(chord)
         return chord
 
     def major_seventh(self):
@@ -33,6 +34,7 @@ class Chords:
                 chord = list(chord)
                 new_chord.append(chord[index])
         chord = new_chord
+        print(chord)
         return chord
 
     def minor_chord(self):
@@ -52,11 +54,6 @@ class Chords:
 
 
 
-def main():
-    chords = Chords()
-    chords.minor_chord()
 
-
-main()
 
 
