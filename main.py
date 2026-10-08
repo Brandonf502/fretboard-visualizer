@@ -30,7 +30,7 @@ def main():
             file.write(f'{scale} lydian scale: {', '.join(lydian_scale)}\n')
 
             mixolydian_scale = scales.mixolydian(scale)
-            file.write(f'{scale} micolydian scale: {', '.join(mixolydian_scale)}\n')
+            file.write(f'{scale} mixolydian scale: {', '.join(mixolydian_scale)}\n')
 
             minor_scale = scales.aeolian(scale)
             file.write(f'{scale} aeolian scale: {', '.join(minor_scale)}\n')

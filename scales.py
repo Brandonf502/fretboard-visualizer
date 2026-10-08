@@ -36,6 +36,44 @@ class Scales:
             return self.notes[index]
         return note
 
+    def filter(self, note):
+        letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
+        index = letters.index(note[0])
+        scale = []
+        for i in range(8):
+            scale.append(letters[index])
+            index += 1
+            if index == len(letters):
+                index = 0
+        return scale
+
+    def interval_finder(self, note, scale):
+        tet = self.notes
+        proper_scale = scale
+        filtered_scale = self.filter(note)
+        new_scale = []
+        for generated, filtered in zip(proper_scale, filtered_scale):
+            if generated == filtered:
+                new_scale.append(filtered)
+            else:
+                if generated in tet and filtered in tet:
+                    k = tet.index(generated)
+                    l = tet.index(filtered)
+                    distance = (k - l + 6) % 12 - 6
+                    whole_step_up = distance == 2
+                    whole_step_down = distance == -2
+                    half_step_up = distance == 1
+                    half_step_down = distance == -1
+                    if whole_step_up:
+                        new_scale.append(filtered + '##')
+                    elif whole_step_down:
+                        new_scale.append(filtered + 'bb')
+                    elif half_step_up:
+                        new_scale.append(filtered + '#')
+                    elif half_step_down:
+                        new_scale.append(filtered + 'b')
+        return new_scale
+
     def major(self, note):
         '''
         Scales are built off of whole steps and half steps. Using the chromatic scale starting from your desired note.
@@ -60,8 +98,8 @@ class Scales:
             note = self.half_step(note)
             scale.append(note)
 
-            self.major_mode = scale
-        return scale
+            self.major_mode = self.interval_finder(scale[0], scale)
+        return self.major_mode
 
     def dorian(self, note):
         scale = []
@@ -82,8 +120,8 @@ class Scales:
             note = self.whole_step(note)
             scale.append(note)
 
-            self.dorian_mode = scale
-        return scale
+            self.dorian_mode = self.interval_finder(scale[0], scale)
+        return self.dorian_mode
 
     def phrygian(self, note):
         scale = []
@@ -104,8 +142,8 @@ class Scales:
             note = self.whole_step(note)
             scale.append(note)
 
-            self.phrygian_mode = scale
-        return scale
+            self.phrygian_mode = self.interval_finder(scale[0], scale)
+        return self.phrygian_mode
 
     def lydian(self, note):
         scale = []
@@ -126,8 +164,8 @@ class Scales:
             note = self.half_step(note)
             scale.append(note)
 
-            self.lydian_mode = scale
-        return scale
+            self.lydian_mode = self.interval_finder(scale[0], scale)
+        return self.lydian_mode
 
     def mixolydian(self, note):
         scale = []
@@ -148,8 +186,8 @@ class Scales:
             note = self.whole_step(note)
             scale.append(note)
 
-            self.mixolydian_mode = scale
-        return scale
+            self.mixolydian_mode = self.interval_finder(scale[0], scale)
+        return self.mixolydian_mode
 
     def aeolian(self, note):
         scale = []
@@ -170,8 +208,8 @@ class Scales:
             note = self.whole_step(note)
             scale.append(note)
 
-            self.aeolian_mode = scale
-        return scale
+            self.aeolian_mode = self.interval_finder(scale[0], scale)
+        return self.aeolian_mode
 
     def locrian(self, note):
         scale = []
@@ -192,8 +230,18 @@ class Scales:
             note = self.whole_step(note)
             scale.append(note)
 
-            self.locrian_mode = scale
-        return scale
+            self.locrian_mode = self.interval_finder(scale[0], scale)
+        return self.locrian_mode
+
+
+
+
+
+
+
+
+
+
 
 
 
