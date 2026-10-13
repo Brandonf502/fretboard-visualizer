@@ -11,6 +11,7 @@ class Guitar: ## Define the guitars parameters to pass.
         self.tuning = tuning
         self.string_count = len(tuning)
 
+
     def get_fretboard(self): ## Build the fretbaord, get the strings.return teh result.
         fretboard = Fretboard(self.tuning, self.string_count, self.frets)
         fretboard.get_strings()

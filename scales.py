@@ -13,6 +13,7 @@ class Scales:
     '''
     def __init__(self):
         self.notes = ['A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#']
+        self.modes = ['major', 'dorian', 'phrygian', 'lydian', 'mixolydian', 'aeolian', 'locrian']
         self.major_mode = []
         self.melodic_minor_mode = None
         self.dorian_mode = []
@@ -47,7 +48,7 @@ class Scales:
                 index = 0
         return scale
 
-    def interval_finder(self, note, scale):
+    def filter_scale(self, note, scale):
         tet = self.notes
         proper_scale = scale
         filtered_scale = self.filter(note)
@@ -98,8 +99,8 @@ class Scales:
             note = self.half_step(note)
             scale.append(note)
 
-            self.major_mode = self.interval_finder(scale[0], scale)
-        return self.major_mode
+            self.major_mode = self.filter_scale(scale[0], scale)
+        return self.major_mode, scale
 
     def dorian(self, note):
         scale = []
@@ -120,8 +121,8 @@ class Scales:
             note = self.whole_step(note)
             scale.append(note)
 
-            self.dorian_mode = self.interval_finder(scale[0], scale)
-        return self.dorian_mode
+            self.dorian_mode = self.filter_scale(scale[0], scale)
+        return self.dorian_mode, scale
 
     def phrygian(self, note):
         scale = []
@@ -142,8 +143,8 @@ class Scales:
             note = self.whole_step(note)
             scale.append(note)
 
-            self.phrygian_mode = self.interval_finder(scale[0], scale)
-        return self.phrygian_mode
+            self.phrygian_mode = self.filter_scale(scale[0], scale)
+        return self.phrygian_mode, scale
 
     def lydian(self, note):
         scale = []
@@ -164,8 +165,8 @@ class Scales:
             note = self.half_step(note)
             scale.append(note)
 
-            self.lydian_mode = self.interval_finder(scale[0], scale)
-        return self.lydian_mode
+            self.lydian_mode = self.filter_scale(scale[0], scale)
+        return self.lydian_mode, scale
 
     def mixolydian(self, note):
         scale = []
@@ -186,8 +187,8 @@ class Scales:
             note = self.whole_step(note)
             scale.append(note)
 
-            self.mixolydian_mode = self.interval_finder(scale[0], scale)
-        return self.mixolydian_mode
+            self.mixolydian_mode = self.filter_scale(scale[0], scale)
+        return self.mixolydian_mode, scale
 
     def aeolian(self, note):
         scale = []
@@ -208,8 +209,8 @@ class Scales:
             note = self.whole_step(note)
             scale.append(note)
 
-            self.aeolian_mode = self.interval_finder(scale[0], scale)
-        return self.aeolian_mode
+            self.aeolian_mode = self.filter_scale(scale[0], scale)
+        return self.aeolian_mode, scale
 
     def locrian(self, note):
         scale = []
@@ -230,8 +231,8 @@ class Scales:
             note = self.whole_step(note)
             scale.append(note)
 
-            self.locrian_mode = self.interval_finder(scale[0], scale)
-        return self.locrian_mode
+            self.locrian_mode = self.filter_scale(scale[0], scale)
+        return self.locrian_mode, scale
 
 
 
